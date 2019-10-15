@@ -18,6 +18,7 @@
 
                   <p><a id="mylinks" href="http://www.microsoft.com">www.microsoft.com</a> All the information
                     would be available on the link </p>
+                    <button onclick="mylink()">Try it</button>
 
         <script>
          /* EXERCISE 1
@@ -26,8 +27,6 @@
            var title1 = document.querySelector("#mainHeading");
            title1.innerHTML ="Today's Document";
 
-
-​
              /* EXERCISE 2
             Write a function to change the class of the title of the page in "myHeading"
             */
@@ -40,7 +39,6 @@
             */
     
                var newtext = document.querySelector("#newDiv");
-
                 var changedtext = newtext.childNodes[0];
                 changedtext.nodeValue = "The changed text";
 
@@ -49,9 +47,10 @@
             /* EXERCISE 4
             Write a function to change the destination of every link to https://www.google.com
             */
-            function myFunction() {
+            function mylink() {
               document.querySelectorAll("#mylinks").href = "https://www.google.com";
-        
+              document.querySelectorAll("allLinks").innerHTML = "All links are redirected to https://www.google.com ";
+            }
 
 ​
              /* EXERCISE 5
@@ -59,8 +58,11 @@
             */
 ​
               /* EXERCISE 6
-           Write a function to add a second paragraph to the div
-            */
+           Write a function to add a second paragraph to the div*/
+
+           $(function(){
+        $("body").append("<p></p>");
+});
 ​
             /* EXERCISE 7
            Write a function to make the first UL disappear
