@@ -9,6 +9,16 @@
 <body>
 
         <h1> Actual title of the page </h1>
+<p>This paragrap has loads of information. That is why it should be correct</p>
+        <div id="newDiv">
+                <p>
+                   This is the child of the Div paragraph. So to be chnaged.
+                </p>
+                  </div> 
+
+                  <p><a id="mylinks" href="http://www.microsoft.com">www.microsoft.com</a> All the information
+                    would be available on the link </p>
+
         <script>
          /* EXERCISE 1
             Write a function to change the Title of the page in something else */
@@ -16,22 +26,33 @@
            var title1 = document.querySelector("#mainHeading");
            title1.innerHTML ="Today's Document";
 
+
 ​
              /* EXERCISE 2
             Write a function to change the class of the title of the page in "myHeading"
             */
+            var title2 = document.title("#mainHeading") ;
+            title2.newTitle ="myHeading";
 
 
-
-            
-​
             /* EXERCISE 3
             Write a function to change the text of only the p which are child of a div
             */
-​
+    
+               var newtext = document.querySelector("#newDiv");
+
+                var changedtext = newtext.childNodes[0];
+                changedtext.nodeValue = "The changed text";
+
+                
+
             /* EXERCISE 4
             Write a function to change the destination of every link to https://www.google.com
             */
+            function myFunction() {
+              document.querySelectorAll("#mylinks").href = "https://www.google.com";
+        
+
 ​
              /* EXERCISE 5
             Write a function to add a new item ONLY to the second list
