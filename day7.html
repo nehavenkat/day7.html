@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title id ="mainHeading">This Document</title>
 </head>
-<body>
+<body onload="showAlert()">
 
         <h1> Actual title of the page </h1>
 <p>This paragrap has loads of information. That is why it should be correct</p>
@@ -16,9 +16,13 @@
                 </p>
                   </div> 
 
-                  <p><a id="mylinks" href="http://www.microsoft.com">www.microsoft.com</a> All the information
+                  <p>
+                    <a href="strive.school">This link goes to Strive School</a>
+                    ​<a id="mylinks" href="http://www.microsoft.com">www.microsoft.com</a> All the information
                     would be available on the link </p>
                     <button onclick="mylink()">Try it</button>
+
+                   
 
         <script>
          /* EXERCISE 1
@@ -55,6 +59,9 @@
 ​
              /* EXERCISE 5
             Write a function to add a new item ONLY to the second list
+
+
+            
             */
 ​
               /* EXERCISE 6
@@ -79,12 +86,43 @@
             /* EXERCISE 10
           Create a new welcome alert message when the page successfully loads
             */
-​
-            /* EXERCISE 11
-            Use HTML5 tags to divide sections, headers etc 
-            */
-        
 
-</script>
-</body>
+                 function showAlert() {
+                alert ("The page is loaded!");
+                     }
+             
+
+            </script>
+​
+        <style>
+            .myHeading {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is the title of the page</h1>
+        <h2>This is the subtitle of the page</h2>
+​
+        <hr>
+​
+        <ul id="firstList">
+            <li>1st</li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+​
+        <ul id="secondList">
+            <li>1st</li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+​
+        
+        <div>
+            <p>This text is just for the exercise</p>
+        </div>
+​
+        <p>And this text is just for the exercise too!</p>
+    </body>
 </html>
